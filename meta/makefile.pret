@@ -1,0 +1,9 @@
+# This file provides instructions for packaging.
+
+`Devel-PL_origargv`
+	perl_version_from m`Devel::PL_origargv`;
+	version_from      m`Devel::PL_origargv`;
+	readme_from       m`Devel::PL_origargv`;
+	test_requires     p`Test::More 0.61` ;
+	.
+
