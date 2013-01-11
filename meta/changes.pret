@@ -8,5 +8,6 @@
 	issued  2013-01-11;
 	changeset [
 		item "Include an example script in the distribution."^^Addition;
+		item "Document test suite."^^Documentation;
 	].
 
