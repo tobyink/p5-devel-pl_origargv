@@ -4,3 +4,9 @@
 	issued  2012-11-07;
 	label   "Initial release".
 
+`Devel-PL_origargv 0.002 cpan:TOBYINK`
+	issued  2013-01-11;
+	changeset [
+		item "Include an example script in the distribution."^^Addition;
+	].
+
