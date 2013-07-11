@@ -7,4 +7,4 @@ cpan:TOBYINK
 	:mbox  <mailto:tobyink@cpan.org>.
 
 cpan:SISYPHUS
-	name   "Sisyphus".
+	:name  "Sisyphus".
