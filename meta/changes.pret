@@ -11,3 +11,15 @@
 		item "Document test suite."^^Documentation;
 	].
 
+`Devel-PL_origargv 0.003 cpan:TOBYINK`
+	issued  2013-07-11;
+	changeset [
+		item [
+			a dcs:Bugfix;
+			label "Rename the internal C functions because they conflict with functions from stdlib.h in some versions of gcc.";
+			dcs:fixes RT#86838;
+			dcs:thanks cpan:SISYPHUS;
+		];
+		item "Note that test suite will not pass when run via `forkprove`."^^Documentation;
+	].
+
