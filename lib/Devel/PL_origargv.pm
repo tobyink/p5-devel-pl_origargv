@@ -54,6 +54,11 @@ Returns argv as a list of strings. If called in scalar context, returns argc
 
 =back
 
+=head1 CAVEATS
+
+This module's test suite will not pass when run via C<forkprove>. Use
+the standard C<prove> instead.
+
 =head1 BUGS
 
 Please report any bugs to
