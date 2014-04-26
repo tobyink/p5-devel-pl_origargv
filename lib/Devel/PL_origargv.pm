@@ -4,17 +4,15 @@ use 5.006;
 use strict;
 use warnings;
 
-our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.003';
-
-use Inline C => q{
-	int _my_argc () {
-		return PL_origargc;
-	}
-	char* _my_argv (int x) {
-		return PL_origargv[x - 1];
-	}
+BEGIN {
+	our $AUTHORITY = 'cpan:TOBYINK';
+	our $VERSION   = '0.004';
+	
+	require DynaLoader;
+	our @ISA = qw(DynaLoader);
+	__PACKAGE__->bootstrap($VERSION);
 };
+
 
 sub get {
 	return _my_argc unless wantarray;
@@ -23,6 +21,10 @@ sub get {
 
 __PACKAGE__
 __END__
+
+=pod
+
+=encoding utf-8
 
 =head1 NAME
 
@@ -74,7 +76,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012-2013 by Toby Inkster.
+This software is copyright (c) 2012-2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

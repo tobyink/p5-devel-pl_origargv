@@ -23,3 +23,16 @@
 		item "Note that test suite will not pass when run via `forkprove`."^^Documentation;
 	].
 
+
+`Devel-PL_origargv 0.004 cpan:TOBYINK`
+	issued  2014-04-26;
+	changeset [
+		item [
+			a dcs:Change;
+			label "Switch from Inline::C to XS.";
+			dcs:blame [ a foaf:Person; label "Anonymous Monk" ];
+			seealso <http://www.perlmonks.org/?node_id=1083955>;
+		];
+		item "use Dist::Inkt"^^Packaging;
+	].
+
